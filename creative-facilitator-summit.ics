@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Playable Streets//Creative Facilitator Summit//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:creative-facilitator-summit-2027@creativefacilitators.com
+DTSTAMP:20260907T000000Z
+DTSTART;VALUE=DATE:20270216
+DTEND;VALUE=DATE:20270218
+SUMMARY:Creative Facilitator Summit
+LOCATION:ArtPlay\, Birrarung Marr\, Melbourne VIC (Day 1) and Arts Centre Me
+ lbourne (Day 2)
+DESCRIPTION:A two-day national gathering for artists working as creative fac
+ ilitators. Day one at ArtPlay\, day two at Arts Centre Melbourne. Presented
+  by Playable Streets with ArtPlay and Arts Centre Melbourne.\n\nDetails and
+  registration: https://creativefacilitators.com
+URL:https://creativefacilitators.com
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Creative Facilitator Summit next week
+END:VALARM
+END:VEVENT
+END:VCALENDAR

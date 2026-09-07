@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Creative Facilitator Summit | 16 &amp; 17 February 2027, Melbourne</title>
+<meta name="description" content="A two-day national gathering for artists who work as creative facilitators. 16 and 17 February 2027 at ArtPlay and Arts Centre Melbourne.">
+<meta property="og:title" content="Creative Facilitator Summit">
+<meta property="og:description" content="A two-day national gathering for artists who work as creative facilitators. 16 and 17 February 2027, Melbourne.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://creativefacilitators.com">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400;12..96,75..100,600;12..96,75..100,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --pavement:#E7E4DC;
+    --pavement-deep:#D8D4C9;
+    --ink:#16242C;
+    --blue:#1F6E8C;
+    --yellow:#F2B72E;
+    --measure:60ch;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--pavement);
+    color:var(--ink);
+    font-family:"Instrument Sans",system-ui,sans-serif;
+    font-size:clamp(1.02rem,0.98rem + 0.25vw,1.15rem);
+    line-height:1.62;
+  }
+  .wrap{max-width:960px;margin:0 auto;padding:0 6vw}
+  p{max-width:var(--measure)}
+  a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:3px}
+  a:hover{color:var(--blue)}
+  :focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+
+  h1,h2,h3,.display{
+    font-family:"Bricolage Grotesque","Instrument Sans",sans-serif;
+    font-weight:800;
+    line-height:1.02;
+    letter-spacing:-0.02em;
+    margin:0;
+  }
+
+  /* masthead */
+  .masthead{
+    display:flex;justify-content:space-between;align-items:baseline;
+    gap:1rem;padding:1.4rem 0 0;
+    font-size:0.92rem;font-weight:500;
+  }
+  .masthead span{font-family:"Bricolage Grotesque",sans-serif;font-weight:600}
+
+  /* hero */
+  .hero{padding:clamp(2.5rem,7vw,4.5rem) 0 0}
+  .hero h1{font-size:clamp(2.9rem,10.5vw,7rem);font-stretch:92%}
+  .hero .standfirst{
+    font-size:clamp(1.15rem,1rem + 0.7vw,1.4rem);
+    max-width:46ch;margin:1.6rem 0 0;
+  }
+
+  /* the two days: the structural centrepiece */
+  .days{
+    display:grid;grid-template-columns:1fr 1fr;gap:6px;
+    margin:clamp(2rem,5vw,3rem) 0 0;
+  }
+  .day{padding:1.5rem 1.4rem 1.7rem;min-height:190px;display:flex;flex-direction:column}
+  .day--one{background:var(--yellow);color:var(--ink)}
+  .day--two{background:var(--blue);color:var(--pavement)}
+  .day .marker{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:0.95rem;margin:0 0 auto}
+  .day .date{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:clamp(1.7rem,4.5vw,2.5rem);line-height:1.04;font-stretch:88%}
+  .day .venue{margin:0.55rem 0 0;font-size:0.98rem;line-height:1.4;max-width:26ch}
+  .day--two .venue{opacity:0.92}
+
+  /* sections */
+  section{padding:clamp(2.8rem,7vw,4.2rem) 0 0}
+  section h2{font-size:clamp(1.5rem,1.2rem + 1.4vw,2.1rem);margin-bottom:0.9rem}
+  .rule{border:0;border-top:2px solid var(--ink);margin:clamp(2.8rem,7vw,4rem) 0 0;opacity:0.85}
+
+  .prog{margin:0;padding:0;list-style:none}
+  .prog li{padding:1rem 0;border-top:1px solid var(--pavement-deep)}
+  .prog li:first-child{border-top:0}
+  .prog h3{font-size:1.08rem;font-weight:600;margin-bottom:0.15rem}
+  .prog p{margin:0;font-size:0.99rem}
+
+  .people{margin:0;padding:0;list-style:none;
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.4rem 2rem}
+  .people h3{font-size:1.05rem;font-weight:600;margin-bottom:0.15rem}
+  .people p{margin:0;font-size:0.95rem;line-height:1.45}
+
+  /* buttons */
+  .actions{display:flex;flex-wrap:wrap;gap:0.7rem;margin-top:1.4rem}
+  .btn{
+    display:inline-block;padding:0.78rem 1.25rem;
+    font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:1rem;
+    text-decoration:none;border:2px solid var(--ink);background:var(--ink);color:var(--pavement);
+  }
+  .btn:hover{background:var(--blue);border-color:var(--blue);color:var(--pavement)}
+  .btn--quiet{background:transparent;color:var(--ink)}
+  .btn--quiet:hover{background:var(--ink);color:var(--pavement);border-color:var(--ink)}
+
+  /* mailing list */
+  .signup{background:var(--ink);color:var(--pavement);margin-top:clamp(3rem,7vw,4.5rem)}
+  .signup .wrap{padding-top:clamp(2.6rem,6vw,3.6rem);padding-bottom:clamp(2.6rem,6vw,3.6rem)}
+  .signup h2{color:var(--yellow)}
+  .signup p{color:var(--pavement);opacity:0.9}
+  .form-row{display:flex;flex-wrap:wrap;gap:0.6rem;margin-top:1.4rem;max-width:520px}
+  .signup input[type=email]{
+    flex:1 1 260px;padding:0.78rem 0.9rem;font:inherit;font-size:1rem;
+    border:2px solid var(--pavement);background:transparent;color:var(--pavement);
+  }
+  .signup input[type=email]::placeholder{color:rgba(231,228,220,0.6)}
+  .signup button{
+    padding:0.78rem 1.25rem;font-family:"Bricolage Grotesque",sans-serif;font-weight:600;
+    font-size:1rem;border:2px solid var(--yellow);background:var(--yellow);color:var(--ink);cursor:pointer;
+  }
+  .signup button:hover{background:var(--pavement);border-color:var(--pavement)}
+  .hidden-field{position:absolute;left:-5000px}
+
+  footer{padding:2.4rem 0 3rem;font-size:0.93rem}
+  footer p{max-width:52ch;margin:0 0 0.6rem}
+
+  @media (max-width:620px){
+    .days{grid-template-columns:1fr}
+    .day{min-height:0}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="masthead">
+    <span>Creative Facilitators</span>
+    <a href="#mailing-list">Join the mailing list</a>
+  </div>
+
+  <header class="hero">
+    <h1>Creative<br>Facilitator<br>Summit</h1>
+    <p class="standfirst">
+      Two days for the artists who invite other people to be creative:
+      in public space, in galleries, in workshops, in care settings.
+    </p>
+
+    <div class="days">
+      <div class="day day--one">
+        <p class="marker">Day one</p>
+        <p class="date">Wed 16 Feb<br>2027</p>
+        <p class="venue">ArtPlay, Birrarung Marr, Melbourne</p>
+      </div>
+      <div class="day day--two">
+        <p class="marker">Day two</p>
+        <p class="date">Thu 17 Feb<br>2027</p>
+        <p class="venue">Arts Centre Melbourne</p>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <h2>What it is</h2>
+    <p>
+      Creative facilitation is the work that helps a stranger cross from watching
+      to taking part. It decides whether a participatory work is welcoming, safe
+      and actually creative. It is also the part of the job that is rarely named,
+      rarely taught and rarely paid properly.
+    </p>
+    <p>
+      The Creative Facilitator Summit is a national gathering of the artists doing
+      that work. Presented by Playable Streets with ArtPlay and Arts Centre
+      Melbourne, it brings together facilitators, performers, producers, teaching
+      artists and the organisations that hire them, from every state.
+    </p>
+  </section>
+
+  <hr class="rule">
+
+  <section>
+    <h2>The two days</h2>
+    <ul class="prog">
+      <li>
+        <h3>Day one at ArtPlay: practice in the room</h3>
+        <p>
+          Workshops, live demonstrations and observed facilitation, plus the first
+          public presentation of Glen Walton's doctoral research on the creative
+          facilitator role and its four principles: openness, perception,
+          authenticity and communication.
+        </p>
+      </li>
+      <li>
+        <h3>Day two at Arts Centre Melbourne: the field</h3>
+        <p>
+          Keynote, panels and participant-led roundtables on the practical
+          questions: rates and contracts, career pathways, training, safety,
+          and how facilitators and the organisations that hire them find each other.
+        </p>
+      </li>
+      <li>
+        <h3>The lasting outcome: a national network</h3>
+        <p>
+          The Summit launches the Creative Facilitators Network, a directory
+          connecting facilitators with the organisations hiring them, by state and
+          by skill area. It continues after the two days are over.
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <hr class="rule">
+
+  <section>
+    <h2>Speaking</h2>
+    <ul class="people">
+      <li>
+        <h3>Sue Giles AM</h3>
+        <p>Keynote. President of ASSITEJ International and Artistic Director of
+        Polyglot Theatre from 2000 to 2022.</p>
+      </li>
+      <li>
+        <h3>Frank Newman</h3>
+        <p>Helpmann Award winning director and creative producer. Formerly
+        Creative Learning Specialist at Sydney Opera House.</p>
+      </li>
+      <li>
+        <h3>Cat Sewell</h3>
+        <p>Artistic Director and Co-CEO of Polyglot Theatre, working across arts,
+        health and education.</p>
+      </li>
+      <li>
+        <h3>Afsaneh Torabi</h3>
+        <p>Performer and maker, core artistic member of Polyglot Theatre, with a
+        Master of Sensorial Theatre from Girona.</p>
+      </li>
+      <li>
+        <h3>Glen Walton</h3>
+        <p>Artistic Director of Playable Streets and convenor of the Summit.</p>
+      </li>
+      <li>
+        <h3>More to come</h3>
+        <p>The full program is being confirmed. Join the mailing list to hear it
+        first.</p>
+      </li>
+    </ul>
+  </section>
+
+  <hr class="rule">
+
+  <section>
+    <h2>Who it's for</h2>
+    <p>
+      Artists who facilitate participation, whether or not you call yourself a
+      facilitator. Performers, teaching artists, producers, front of house and
+      program staff, museum and gallery educators, students and recent graduates,
+      and anyone hiring people to do this work.
+    </p>
+    <p>
+      Places for independent artists are subsidised, with bursaries for artists
+      travelling from regional Victoria and interstate. Registration opens in 2026.
+    </p>
+  </section>
+
+  <hr class="rule">
+
+  <section id="save-the-date">
+    <h2>Save the date</h2>
+    <p>
+      Add 16 and 17 February 2027 to your calendar now. Registration details
+      follow closer to the date.
+    </p>
+    <div class="actions">
+      <a class="btn" href="creative-facilitator-summit.ics" download>Add to calendar</a>
+      <a class="btn btn--quiet" target="_blank" rel="noopener"
+         href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Creative%20Facilitator%20Summit&dates=20270216/20270218&details=A%20two-day%20national%20gathering%20for%20artists%20working%20as%20creative%20facilitators.%20Day%20one%20at%20ArtPlay%2C%20day%20two%20at%20Arts%20Centre%20Melbourne.%20More%20at%20https%3A%2F%2Fcreativefacilitators.com&location=ArtPlay%2C%20Birrarung%20Marr%2C%20Melbourne%20VIC">Add to Google Calendar</a>
+    </div>
+  </section>
+</div>
+
+<div class="signup" id="mailing-list">
+  <div class="wrap">
+    <h2>Hear when registration opens</h2>
+    <p>
+      Program announcements, bursary information and the launch of the Creative
+      Facilitators Network. No more than a handful of emails.
+    </p>
+
+    <!-- Replace the action URL below with your own Mailchimp embedded form URL. -->
+    <form action="https://YOUR-ACCOUNT.us1.list-manage.com/subscribe/post?u=YOUR_U_VALUE&amp;id=YOUR_ID_VALUE"
+          method="post" target="_blank" novalidate>
+      <label class="hidden-field" for="mce-EMAIL">Email address</label>
+      <div class="form-row">
+        <input type="email" name="EMAIL" id="mce-EMAIL" required
+               placeholder="you@example.com" autocomplete="email">
+        <button type="submit" name="subscribe">Sign me up</button>
+      </div>
+      <!-- Mailchimp bot trap. Replace with the matching field from your own embed code. -->
+      <div class="hidden-field" aria-hidden="true">
+        <input type="text" name="b_YOUR_U_VALUE_YOUR_ID_VALUE" tabindex="-1" value="">
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="wrap">
+  <footer>
+    <p>
+      Presented by Playable Streets with ArtPlay, City of Melbourne, and
+      Arts Centre Melbourne.
+    </p>
+    <p>
+      Questions: <a href="mailto:playablestreets@gmail.com">playablestreets@gmail.com</a>
+    </p>
+    <p>
+      We acknowledge the Traditional Owners of the lands on which we gather, the
+      Wurundjeri Woi Wurrung and Bunurong peoples of the Kulin Nation, and pay
+      respects to Elders past and present.
+    </p>
+  </footer>
+</div>
+
+</body>
+</html>
